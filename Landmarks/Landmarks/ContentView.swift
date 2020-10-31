@@ -20,20 +20,30 @@ struct ContentView: View {
 //            .foregroundColor(.red)
         
         VStack(alignment: .leading) {
-            Text("Turtle Rock")
-                .font(.title)
-                .foregroundColor(.red)
-            
-            
-            HStack {
-                Text("Joshua Tree National Park")
-                    .font(.subheadline)
-                Spacer()
-                Text("California")
-                    .font(.subheadline)
+            MapView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height:300)
+
+            CircleImage()
+                .offset(y:-130)
+                .padding(.bottom, -130)
+
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+
+                HStack(alignment: .top) {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("California")
+                        .font(.subheadline)
+                }
             }
+            .padding()
+
+            Spacer()
         }
-        .padding()
     }
 }
 
