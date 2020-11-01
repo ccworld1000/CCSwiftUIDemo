@@ -9,17 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        Text("Hello, SwiftUI!")
-        
-//        Text("Turtle Rock")
-//            .font(.title)
-//            .foregroundColor(.green)
-        
-//        Text("Turtle Rock")
-//            .font(.title)
-//            .foregroundColor(.red)
-        
-        VStack(alignment: .leading) {
+        VStack {
             MapView()
                 .edgesIgnoringSafeArea(.top)
                 .frame(height:300)
